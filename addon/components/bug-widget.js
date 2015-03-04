@@ -16,7 +16,7 @@ export default Ember.Component.extend({
     return '';
   }.property('hide'),
 
-  arrowDirection: function () {
+  arrowIcon: function () {
     var hide = this.get('hide');
     var left = this.get('arrowLeftIcon');
     var right = this.get('arrowRightIcon');
