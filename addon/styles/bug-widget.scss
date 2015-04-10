@@ -1,74 +1,83 @@
+/**********************
+    TODO: Figure out how to get ember-cli to pick up .scss files from an addon...
+    currently only .css seems to be supported.  Until then, use this file as the
+    single source of truth and transpile to styles.css (maybe automate this step?)
+***********************/
 .bug-widget {
-  position: absolute;
-  border: 1px solid #e7e7e7;
-  background-color: #FFFFFF;
-  height: 41px;
-
-  &.left {
-    left: 0;
-    border-left: none;
-    border-radius: 0 4px 4px 0;
-
-    .bug-toggle {
-      float: right;
-    }
-
-    .bug-main {
-      border-right: 1px solid #e7e7e7;
-    }
-  }
-
-  &.right {
-    right: 0;
-    border-right: none;
-    border-radius: 4px 0 0 4px;
-
-    .bug-toggle {
-      float: left;
-    }
-
-    .bug-main {
-      border-left: 1px solid #e7e7e7;
-    }
-  }
-
-  &.top {
-    top: 10px;
-  }
-
-  &.bottom {
-    bottom: 20px;
-  }
-
-  .bug-toggle {
-    cursor: pointer;
-    display: inline-block;
-    padding: 5px 4px 0 5px;
-
-    i.bug-icon {
-      display: block;
-    }
-
-    i.bug-arrow {
-      padding-left: 2px;
-    }
-  }
-
-  .bug-main {
-    display: inline-block;
+    position: absolute;
+    border: 1px solid #e7e7e7;
+    background-color: #FFFFFF;
     height: 40px;
 
-    a {
-      padding: 11px 5px 12px 5px;
-      border: none;
-      background: none;
-      text-decoration: none;
-      position: relative;
-      top: 10px;
+    &.left {
+        left: 0;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
 
-      &:hover {
-        background-color: #f8f8f8;
-      }
+        .bug-toggle {
+            float: right;
+        }
+
+        .bug-main {
+            border-right: 1px solid #e7e7e7;
+        }
     }
-  }
+
+    &.right {
+        right: 0;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+
+        .bug-toggle {
+            float: left;
+        }
+
+        .bug-main {
+            border-left: 1px solid #e7e7e7;
+        }
+    }
+
+    &.top {
+        top: 10px;
+    }
+
+    &.bottom {
+        bottom: 20px;
+    }
+
+    .bug-toggle {
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px 4px 0 5px;
+
+        i.bug-icon {
+            display: block;
+        }
+
+        i.bug-arrow {
+            padding-left: 2px;
+        }
+    }
+
+    .bug-main {
+        display: inline-block;
+        height: 40px;
+
+        &.hide {
+            display: none;
+        }
+
+        a {
+            padding: 11px 5px 11px 5px;
+            border: none;
+            background: none;
+            text-decoration: none;
+            position: relative;
+            top: 11px;
+
+            &:hover {
+                background-color: #f8f8f8;
+            }
+        }
+    }
 }

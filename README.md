@@ -1,25 +1,78 @@
-# Ember-bug-widget
+# Ember Bug Widget
 
-This README outlines the details of collaborating on this Ember addon.
+This addon is a lightweight drop-in bug-reporting widget for your Ember application.  Simply add the bug-widget to your application.hbs template and tell it where your bugs should be reported:
 
-## Installation
+```
+{{bug-widget url='https://github.com/elwayman02/ember-bug-widget/issues/new'}}
+```
+
+The text of the button defaults to "Report A Bug", but can easily be configured:
+
+```
+{{bug-widget
+    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
+    text='File An Issue'}}
+```
+
+The widget displays in the bottom right edge of the page by default, and it can currently be moved to the other three corners of the page as well:
+
+Bottom Left -
+```
+{{bug-widget
+    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
+    horizontal='left'}}
+```
+
+Top Left -
+```
+{{bug-widget
+    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
+    horizontal='left'
+    vertical='top'}}
+```
+
+Top Right -
+```
+{{bug-widget
+    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
+    vertical='top'}}
+```
+
+Currently the widget's icons default to FontAwesome classes, but they can be configured as well:
+
+```
+{{bug-widget
+    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
+    bugIcon='bugIconClass'
+    arrowLeftIcon='leftArrowClass'
+    arrowRightIcon='rightArrowClass'}}
+```
+
+Additionally, if you want the widget to be expanded by default, simply initialize the hide attribute as false:
+
+```
+{{bug-widget
+    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
+    hide=false}}
+```
+
+## Contributing
+
+This section details how to contribute to this project.
+
+### Installation
 
 * `git clone` this repository
+* `npm install -g ember-cli`
 * `npm install`
 * `bower install`
 
-## Running
+### Running
 
 * `ember server`
 * Visit your app at http://localhost:4200.
 
-## Running Tests
+### Running Tests
 
 * `ember test`
 * `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
