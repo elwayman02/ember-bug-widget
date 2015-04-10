@@ -1,5 +1,5 @@
 .bug-widget {
-    position: absolute;
+    position: fixed;
     border: 1px solid #e7e7e7;
     background-color: #FFFFFF;
     height: 40px;
