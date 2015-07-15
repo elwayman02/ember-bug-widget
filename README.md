@@ -4,7 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/elwayman02/ember-bug-widget/badges/gpa.svg)](https://codeclimate.com/github/elwayman02/ember-bug-widget)
 [![Codacy Badge](https://www.codacy.com/project/badge/7b9a436d453943baa9dc1f00a5cd72f9)](https://www.codacy.com/app/hawker-jordan/ember-bug-widget)
 [![Ember Observer](http://emberobserver.com/badges/ember-bug-widget.svg)](http://emberobserver.com/addons/ember-bug-widget)
-![Dependencies](https://david-dm.org/elwayman02/ember-bug-widget.svg)
+[![Dependency Status](https://www.versioneye.com/user/projects/557386e1336334002500000a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/557386e1336334002500000a)
 
 
 This addon is a lightweight drop-in bug-reporting widget for your Ember application.  Simply add the bug-widget to your application.hbs template and tell it where your bugs should be reported:
