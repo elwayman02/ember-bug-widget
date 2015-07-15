@@ -1,4 +1,7 @@
 import Ember from 'ember';
+import layout from '../templates/components/bug-widget';
+
+const { computed } = Ember;
 
 export default Ember.Component.extend({
     hide: true,
@@ -8,8 +11,9 @@ export default Ember.Component.extend({
     bugIcon: 'fa fa-bug',
     arrowLeftIcon: 'fa fa-angle-double-left',
     arrowRightIcon: 'fa fa-angle-double-right',
+    layout,
 
-    hiddenClass: Ember.computed('hide', function () {
+    hiddenClass: computed('hide', function () {
         if (this.get('hide')) {
             return 'hide';
         }
@@ -17,19 +21,21 @@ export default Ember.Component.extend({
         return '';
     }),
 
-    arrowIcon: Ember.computed('hide', 'arrowLeftIcon', 'arrowRightIcon', function () {
-        var hide = this.get('hide');
-        var left = this.get('arrowLeftIcon');
-        var right = this.get('arrowRightIcon');
+    arrowIcon: computed('hide', 'arrowLeftIcon', 'arrowRightIcon', 'horizontal', function () {
+        let hide = this.get('hide');
+        let left = this.get('arrowLeftIcon');
+        let right = this.get('arrowRightIcon');
+        let horizontal = this.get('horizontal');
 
-        if (this.get('horizontal') === 'right') {
+        if (horizontal.toLowerCase() === 'right') {
             return hide ? left : right;
         }
+
         return hide ? right : left;
     }),
 
     actions: {
-        toggle: function () {
+        toggle() {
             this.toggleProperty('hide');
         }
     }
