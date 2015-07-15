@@ -40,7 +40,6 @@ test('arrowIcon default', function(assert) {
 
     var component = this.subject();
     var left = component.get('arrowLeftIcon');
-    var right = component.get('arrowRightIcon');
 
     assert.equal(component.get('arrowIcon'), left, 'Left by default (collapsed)');
 });
@@ -49,7 +48,6 @@ test('arrowIcon expanded', function(assert) {
     assert.expect(1);
 
     var component = this.subject();
-    var left = component.get('arrowLeftIcon');
     var right = component.get('arrowRightIcon');
 
     component.set('hide', false);
@@ -60,7 +58,6 @@ test('arrowIcon left align default', function(assert) {
     assert.expect(1);
 
     var component = this.subject();
-    var left = component.get('arrowLeftIcon');
     var right = component.get('arrowRightIcon');
 
     component.set('horizontal', 'left');
@@ -72,7 +69,6 @@ test('arrowIcon left align expanded', function(assert) {
 
     var component = this.subject();
     var left = component.get('arrowLeftIcon');
-    var right = component.get('arrowRightIcon');
 
     component.setProperties({
         horizontal: 'left',
