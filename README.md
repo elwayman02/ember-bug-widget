@@ -9,13 +9,13 @@
 
 This addon is a lightweight drop-in bug-reporting widget for your Ember application.  Simply add the bug-widget to your application.hbs template and tell it where your bugs should be reported:
 
-```
+```handlebars
 {{bug-widget url='https://github.com/elwayman02/ember-bug-widget/issues/new'}}
 ```
 
 The text of the button defaults to "Report A Bug", but can easily be configured:
 
-```
+```handlebars
 {{bug-widget
     url='https://github.com/elwayman02/ember-bug-widget/issues/new'
     text='File An Issue'}}
@@ -24,14 +24,14 @@ The text of the button defaults to "Report A Bug", but can easily be configured:
 The widget displays in the bottom right edge of the page by default, and it can currently be moved to the other three corners of the page as well:
 
 Bottom Left -
-```
+```handlebars
 {{bug-widget
     url='https://github.com/elwayman02/ember-bug-widget/issues/new'
     horizontal='left'}}
 ```
 
 Top Left -
-```
+```handlebars
 {{bug-widget
     url='https://github.com/elwayman02/ember-bug-widget/issues/new'
     horizontal='left'
@@ -39,7 +39,7 @@ Top Left -
 ```
 
 Top Right -
-```
+```handlebars
 {{bug-widget
     url='https://github.com/elwayman02/ember-bug-widget/issues/new'
     vertical='top'}}
@@ -47,7 +47,7 @@ Top Right -
 
 Currently the widget's icons default to FontAwesome classes, but they can be configured as well:
 
-```
+```handlebars
 {{bug-widget
     url='https://github.com/elwayman02/ember-bug-widget/issues/new'
     bugIcon='bugIconClass'
@@ -57,10 +57,18 @@ Currently the widget's icons default to FontAwesome classes, but they can be con
 
 Additionally, if you want the widget to be expanded by default, simply initialize the hide attribute as false:
 
-```
+```handlebars
 {{bug-widget
     url='https://github.com/elwayman02/ember-bug-widget/issues/new'
     hide=false}}
+```
+
+To further customize the widget, you may use it in the block format and yield your own contents for the button:
+
+```handlebars
+{{#bug-widget}}
+    I am a custom widget: <a href="http://jhawk.co" target="_blank">Click me!</a>
+{{/bug-widget}}
 ```
 
 ## Contributing
