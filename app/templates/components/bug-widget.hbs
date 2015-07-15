@@ -1,9 +1,15 @@
 <div class="bug-widget {{horizontal}} {{vertical}}">
-	<div {{action 'toggle'}} class="bug-toggle">
-		<i class="{{bugIcon}} bug-icon"></i>
-		<i class="{{arrowIcon}} bug-arrow"></i>
-	</div>
-	<div class="bug-main {{hiddenClass}}">
-		<a href="{{url}}" target="_blank">{{text}}</a>
-	</div>
+    <div {{action 'toggle'}} class="bug-toggle">
+        <i class="{{bugIcon}} bug-icon"></i>
+        <i class="{{arrowIcon}} bug-arrow"></i>
+    </div>
+    <div class="bug-main {{hiddenClass}}">
+        {{debugger}}
+        {{#if hasBlock}}
+            {{debugger}}
+            {{yield}}
+        {{else}}
+            <a href="{{url}}" target="_blank">{{text}}</a>
+        {{/if}}
+    </div>
 </div>
