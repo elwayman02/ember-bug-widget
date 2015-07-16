@@ -2,6 +2,7 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-addon');
 var pickFiles = require('broccoli-static-compiler');
 var mergeTrees = require('broccoli-merge-trees');
+var path = require('path');
 
 module.exports = function (defaults) {
     var app = new EmberApp(defaults, {
@@ -15,10 +16,9 @@ module.exports = function (defaults) {
      behave. You most likely want to be modifying `./index.js` or app's build file
      */
 
-    var fontTree = pickFiles('bower_components/fontawesome/fonts', {
+    var fontTree = pickFiles(path.join(app.bowerDirectory, 'fontawesome', 'fonts'), {
         srcDir: '/',
-        files: ['*'],
-        destDir: '/assets/fonts'
+        destDir: path.join('assets', 'fonts')
     });
 
     return mergeTrees([app.toTree(), fontTree]);
