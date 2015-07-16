@@ -45,16 +45,6 @@ Top Right -
     vertical='top'}}
 ```
 
-Currently the widget's icons default to FontAwesome classes, but they can be configured as well:
-
-```handlebars
-{{bug-widget
-    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
-    bugIcon='bugIconClass'
-    arrowLeftIcon='leftArrowClass'
-    arrowRightIcon='rightArrowClass'}}
-```
-
 Additionally, if you want the widget to be expanded by default, simply initialize the hide attribute as false:
 
 ```handlebars
@@ -70,6 +60,42 @@ To further customize the widget, you may use it in the block format and yield yo
     I am a custom widget: <a href="http://jhawk.co" target="_blank">Click me!</a>
 {{/bug-widget}}
 ```
+
+Currently the widget's icons default to FontAwesome classes, but they can be configured as well:
+
+```handlebars
+{{bug-widget
+    url='https://github.com/elwayman02/ember-bug-widget/issues/new'
+    bugIcon='bugIconClass'
+    arrowLeftIcon='leftArrowClass'
+    arrowRightIcon='rightArrowClass'}}
+```
+
+If you would like to use FontAwesome icons, you must configure them within your own app. We did not want to force that
+dependency on every user of this addon, so just add the following to your `ember-cli-build.js` (or `Brocfile.js`, for older versions of Ember-CLI):
+
+```javascript
+/* global require, module */
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var pickFiles = require('broccoli-static-compiler');
+var mergeTrees = require('broccoli-merge-trees');
+var path = require('path');
+
+module.exports = function (defaults) {
+    var app = new EmberApp(defaults, {
+        // Add options here
+    });
+
+    var fontTree = pickFiles(path.join(app.bowerDirectory, 'fontawesome', 'fonts'), {
+        srcDir: '/',
+        destDir: path.join('assets', 'fonts')
+    });
+
+    return mergeTrees([app.toTree(), fontTree]);
+};
+```
+
+You'll need to install `broccoli-static-compiler` and `broccoli-merge-trees` via npm to have access to those packages.
 
 ## Contributing
 
