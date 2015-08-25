@@ -6,6 +6,7 @@
 [![Ember Observer](http://emberobserver.com/badges/ember-bug-widget.svg)](http://emberobserver.com/addons/ember-bug-widget)
 [![Dependency Status](https://www.versioneye.com/user/projects/557386e1336334002500000a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/557386e1336334002500000a)
 
+[![NPM](https://nodei.co/npm/ember-bug-widget.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ember-bug-widget/)
 
 This addon is a lightweight drop-in bug-reporting widget for your Ember application.  Simply add the bug-widget to your application.hbs template and tell it where your bugs should be reported:
 
