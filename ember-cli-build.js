@@ -6,7 +6,9 @@ var path = require('path');
 
 module.exports = function (defaults) {
     var app = new EmberApp(defaults, {
-        // Add options here
+        sassOptions: {
+            extension: 'scss'
+        }
     });
 
     /*
