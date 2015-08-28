@@ -8,6 +8,8 @@
 
 [![NPM](https://nodei.co/npm/ember-bug-widget.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ember-bug-widget/)
 
+Ember-Bug-Widget is now aligned with the [Ember 2.x Release Format](http://emberjs.com/blog/2015/06/16/ember-project-at-2-0.html).
+
 This addon is a lightweight drop-in bug-reporting widget for your Ember application.  Simply add the bug-widget to your application.hbs template and tell it where your bugs should be reported:
 
 ```handlebars
