@@ -102,7 +102,7 @@ You'll need to install `broccoli-static-compiler` and `broccoli-merge-trees` via
 
 ## Contributing
 
-This section details how to contribute to this project.
+[CONTRIBUTING.md](https://github.com/elwayman02/ember-bug-widget/blob/master/CONTRIBUTING.md) details how to contribute to this project.
 
 ### Installation
 
