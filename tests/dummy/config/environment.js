@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'dummy',
     environment: environment,
-    baseURL: '/ember-bug-widget',
+    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -40,7 +40,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+      ENV.baseURL = '/ember-bug-widget/';
+      ENV.locationType = 'hash';
   }
 
   return ENV;

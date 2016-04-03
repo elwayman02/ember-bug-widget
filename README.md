@@ -107,7 +107,6 @@ You'll need to install `broccoli-static-compiler` and `broccoli-merge-trees` via
 ### Installation
 
 * `git clone` this repository
-* `npm install -g ember-cli`
 * `npm install`
 * `bower install`
 
@@ -118,5 +117,12 @@ You'll need to install `broccoli-static-compiler` and `broccoli-merge-trees` via
 
 ### Running Tests
 
+* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
+
+## Building
+
+* `ember build`
+
+For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
