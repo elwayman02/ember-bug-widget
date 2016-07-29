@@ -112,12 +112,12 @@ You'll need to install `broccoli-static-compiler` and `broccoli-merge-trees` via
 
 ### Running
 
-* `ember server`
+* `ember serve`
 * Visit your app at http://localhost:4200.
 
 ### Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
