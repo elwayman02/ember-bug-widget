@@ -1,6 +1,6 @@
 {
   "name": "ember-bug-widget",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Bug reporting widget for Ember applications",
   "directories": {
     "doc": "doc",
