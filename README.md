@@ -113,7 +113,7 @@ You'll need to install `broccoli-static-compiler` and `broccoli-merge-trees` via
 ### Running
 
 * `ember serve`
-* Visit your app at http://localhost:4200.
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Running Tests
 
@@ -125,4 +125,4 @@ You'll need to install `broccoli-static-compiler` and `broccoli-merge-trees` via
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
