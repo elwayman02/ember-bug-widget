@@ -2,9 +2,18 @@
   "name": "ember-bug-widget",
   "version": "2.1.2",
   "description": "Bug reporting widget for Ember applications",
+  "keywords": [
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "author": "Jordan Hawker <hawker.jordan@gmail.com> (http://www.JordanHawker.com)",
   "directories": {
     "doc": "doc",
     "test": "tests"
+  },
+  "repository": "https://github.com/elwayman02/ember-bug-widget",
+  "bugs": {
+    "url": "https://github.com/elwayman02/ember-bug-widget/issues"
   },
   "scripts": {
     "build": "ember build",
@@ -12,49 +21,36 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "https://github.com/elwayman02/ember-bug-widget",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "author": "Jordan Hawker <hawker.jordan@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/elwayman02/ember-bug-widget/issues"
+  "dependencies": {
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.1.1",
+    "ember-cli-sass": "5.4.0"
   },
   "devDependencies": {
-    "broccoli-asset-rev": "^2.4.2",
+    "broccoli-asset-rev": "^2.4.5",
     "broccoli-merge-trees": "^1.1.1",
     "broccoli-static-compiler": "^0.2.2",
-    "ember-cli": "2.7.0",
-    "ember-cli-app-version": "^2.0.0",
-    "ember-cli-content-security-policy": "0.5.0",
-    "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli": "2.12.1",
+    "ember-cli-app-version": "^1.0.0",
+    "ember-cli-dependency-checker": "^1.3.0",
+    "ember-cli-eslint": "^3.0.0",
     "ember-cli-github-pages": "0.1.2",
-    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
-    "ember-cli-inject-live-reload": "^1.4.0",
-    "ember-cli-jshint": "^2.0.1",
-    "ember-cli-qunit": "^3.0.2",
-    "ember-cli-release": "1.0.0-beta.1",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.6",
+    "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-qunit": "^3.1.0",
+    "ember-cli-release": "1.0.0-beta.2",
+    "ember-cli-shims": "^1.0.2",
     "ember-cli-sri": "^2.1.0",
-    "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
-    "ember-load-initializers": "^0.5.1",
+    "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
-    "ember-try": "^0.2.2",
-    "ember-watson": "^0.8.0",
-    "loader.js": "^4.0.5"
+    "ember-source": "~2.12.0",
+    "loader.js": "^4.2.3"
   },
-  "keywords": [
-    "ember-addon",
-    "bug",
-    "widget"
-  ],
-  "dependencies": {
-    "ember-cli-babel": "^5.1.6",
-    "ember-cli-htmlbars": "^1.0.3",
-    "ember-cli-sass": "5.5.1"
+  "engines": {
+    "node": ">= 4"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",

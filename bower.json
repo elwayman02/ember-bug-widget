@@ -1,11 +1,7 @@
 {
   "name": "ember-bug-widget",
-  "dependencies": {
-    "ember": "~2.7.0",
-    "ember-cli-shims": "0.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "fontawesome": "~4.4.0",
-    "ember-qunit-notifications": "0.1.0"
+    "fontawesome": "~4.7.0"
   }
 }
