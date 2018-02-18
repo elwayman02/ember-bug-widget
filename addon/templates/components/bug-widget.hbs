@@ -1,7 +1,7 @@
 <div class="bug-widget {{horizontal}} {{vertical}}">
     <div {{action 'toggle'}} class="bug-toggle">
-        <i class="{{bugIcon}} bug-icon"></i>
-        <i class="{{arrowIcon}} bug-arrow"></i>
+        {{fa-icon bugIcon class='bug-icon'}}
+        {{fa-icon arrowIcon class='bug-arrow'}}
     </div>
     <div class="bug-main {{hiddenClass}}">
         {{#if hasBlock}}
