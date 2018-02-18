@@ -1,5 +1,5 @@
 /* jshint node:true */
 module.exports = {
-    manifest: ['package.json', 'bower.json'],
+    manifest: ['package.json'],
     publish: true
 };
