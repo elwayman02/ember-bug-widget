@@ -1,14 +1,11 @@
-/*jshint node:true*/
-/* global require, module */
-var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
-var pickFiles = require('broccoli-static-compiler');
-var mergeTrees = require('broccoli-merge-trees');
-var path = require('path');
+'use strict';
+
+const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
-  var app = new EmberAddon(defaults, {
-      sassOptions: {
-          extension: 'scss'
+  let app = new EmberAddon(defaults, {
+      "ember-font-awesome": {
+          includeFontFiles: false
       }
   });
 
@@ -19,10 +16,5 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
-    var fontTree = pickFiles(path.join(app.bowerDirectory, 'fontawesome', 'fonts'), {
-        srcDir: '/',
-        destDir: path.join('assets', 'fonts')
-    });
-
-    return mergeTrees([app.toTree(), fontTree]);
+  return app.toTree();
 };

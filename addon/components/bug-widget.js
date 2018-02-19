@@ -1,16 +1,15 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 import layout from '../templates/components/bug-widget';
 
-const { computed } = Ember;
-
-export default Ember.Component.extend({
+export default Component.extend({
     hide: true,
     text: 'Report A Bug',
     horizontal: 'right',
     vertical: 'bottom',
-    bugIcon: 'fa fa-bug',
-    arrowLeftIcon: 'fa fa-angle-double-left',
-    arrowRightIcon: 'fa fa-angle-double-right',
+    bugIcon: 'bug',
+    arrowLeftIcon: 'angle-double-left',
+    arrowRightIcon: 'angle-double-right',
     layout,
 
     hiddenClass: computed('hide', function () {
@@ -21,7 +20,7 @@ export default Ember.Component.extend({
         return '';
     }),
 
-    arrowIcon: computed('hide', 'arrowLeftIcon', 'arrowRightIcon', 'horizontal', function () {
+    arrowIcon: computed('{hide,arrowLeftIcon,arrowRightIcon,horizontal}', function () {
         let hide = this.get('hide');
         let left = this.get('arrowLeftIcon');
         let right = this.get('arrowRightIcon');

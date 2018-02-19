@@ -1,7 +1,0 @@
-{
-  "name": "ember-bug-widget",
-  "dependencies": {},
-  "devDependencies": {
-    "fontawesome": "~4.7.0"
-  }
-}
