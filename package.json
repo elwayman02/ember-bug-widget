@@ -1,6 +1,6 @@
 {
   "name": "ember-bug-widget",
-  "version": "2.12.0",
+  "version": "3.0.0",
   "description": "Bug reporting widget for Ember applications",
   "keywords": [
     "ember-addon"
