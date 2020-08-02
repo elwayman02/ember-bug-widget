@@ -2,11 +2,11 @@ Ember Bug Widget
 ==============================================================================
 
 [![Build Status](https://travis-ci.org/elwayman02/ember-bug-widget.svg?branch=master)](https://travis-ci.org/elwayman02/ember-bug-widget)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/68529bc1-92ef-485c-a4b7-45b490760844/deploy-status)](https://app.netlify.com/sites/peaceful-sinoussi-e3a862/deploys)
 [![npm version](https://badge.fury.io/js/ember-bug-widget.svg)](http://badge.fury.io/js/ember-bug-widget)
 [![Code Climate](https://codeclimate.com/github/elwayman02/ember-bug-widget/badges/gpa.svg)](https://codeclimate.com/github/elwayman02/ember-bug-widget)
 [![Codacy Badge](https://www.codacy.com/project/badge/7b9a436d453943baa9dc1f00a5cd72f9)](https://www.codacy.com/app/hawker-jordan/ember-bug-widget)
 [![Ember Observer](http://emberobserver.com/badges/ember-bug-widget.svg)](http://emberobserver.com/addons/ember-bug-widget)
-[![Dependency Status](https://www.versioneye.com/user/projects/557386e1336334002500000a/badge.svg?style=flat)](https://www.versioneye.com/user/projects/557386e1336334002500000a)
 
 [![NPM](https://nodei.co/npm/ember-bug-widget.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ember-bug-widget/)
 
