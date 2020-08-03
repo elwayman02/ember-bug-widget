@@ -82,6 +82,8 @@ Contributing
 
 We adhere to the [Ember Community Guidelines](https://emberjs.com/guidelines/) for our Code of Conduct.
 
+[![Powered By Netlify](https://www.netlify.com/img/global/badges/netlify-light.svg)](https://www.netlify.com)
+
 ### Installation
 
 * `git clone <repository-url>`
